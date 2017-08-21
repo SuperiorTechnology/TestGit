@@ -47,7 +47,6 @@ public class FirstPdf {
     }
 
     // iText allows to add metadata to the PDF which can be viewed in your Adobe
-    // Reader
     // under File -> Properties
     private static void addMetaData(Document document) {
         document.addTitle("My first PDF");
@@ -177,7 +176,7 @@ public class FirstPdf {
         table.addCell("2.3");
 
         subCatPart.add(table);
-        
+
          table = new PdfPTable(2);
         PdfPCell cellOne = new PdfPCell(new Phrase("Hello"));
         PdfPCell cellTwo = new PdfPCell(new Phrase("World"));
